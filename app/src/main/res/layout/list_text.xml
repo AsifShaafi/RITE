@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:id="@+id/list_text"
+        android:layout_toRightOf="@+id/list_img"
+        android:layout_toEndOf="@+id/list_img"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"/>
+
+    <ImageView
+        android:contentDescription="List item icons"
+        android:id="@+id/list_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

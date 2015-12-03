@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Russell IT and Engineering</string>
+    <string name="action_settings">Settings</string>
+    <string name="service_img">service images</string>
+    <string name="mail_yes">yes</string>
+    <string name="service_list">Service List</string>
+    <string name="code_skills">HTML, HTML5, CSS, CSS3, PHP, JavaScript, JQuery, JAVA, ASP.NET, C#, C, C++, JSON, Python, MYSQL, SQL, Backbone JS, Node JS, Angular JS, Assembly, Drupal, Joomla, Wordpress</string>
+</resources>
