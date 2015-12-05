@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements EmaiDialog.Comunicator {
+public class MainActivity extends AppCompatActivity  { //has to add "implements EmaiDialog.Comunicator" to communicate between fragments
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,16 +60,19 @@ public class MainActivity extends AppCompatActivity implements EmaiDialog.Comuni
         startActivity(intent);
     }
 
-    @Override
-    public void onClickEvent(String massage) {
-        if(massage.equals("yes")) {
-            String uri = "mailto:a15shaafi.209@gmail.com";
-            Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
-            sendIntent.setType("message/plain");
-            sendIntent.setData(Uri.parse(uri));
-            startActivity(sendIntent);
-        }
-        else
-            Toast.makeText(this,massage,Toast.LENGTH_SHORT).show();
-    }
+    /*TODO applies when a custom dialog fragment is used and for using button communication events*/
+//    @Override
+//    public void onClickEvent(String massage) {
+//        if(massage.equals("yes")) {
+//            String uri = "mailto:a15shaafi.209@gmail.com";
+//            Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
+//            sendIntent.setType("message/plain");
+//            sendIntent.setData(Uri.parse(uri));
+//            startActivity(sendIntent);
+//        }
+//        else
+//            Toast.makeText(this,massage,Toast.LENGTH_SHORT).show();
+//    }
+
+    /**/
 }
