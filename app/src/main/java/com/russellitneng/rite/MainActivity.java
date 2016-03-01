@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  { //has to add "implements EmaiDialog.Comunicator" to communicate between fragments
 
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity  { //has to add "implements 
             public void onClick(View view) {
                 FragmentManager manager = getFragmentManager();
                 EmaiDialog emaiDialog = new EmaiDialog();
-                emaiDialog.show(manager,"email_confirm");
+                emaiDialog.show(manager, "email_confirm");
             }
         });
     }
@@ -48,11 +47,18 @@ public class MainActivity extends AppCompatActivity  { //has to add "implements 
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+
+            startActivity(new Intent(this, About.class));
             return true;
         }
+        else if(id == R.id.action_web){
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("http://www.russellitbd.com"));
+            startActivity(intent);
+        }
 
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     public void serviceListMenu(View view) {

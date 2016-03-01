@@ -5,4 +5,9 @@
     <string name="mail_yes">yes</string>
     <string name="service_list">Service List</string>
     <string name="code_skills">HTML, HTML5, CSS, CSS3, PHP, JavaScript, JQuery, JAVA, ASP.NET, C#, C, C++, JSON, Python, MYSQL, SQL, Backbone JS, Node JS, Angular JS, Assembly, Drupal, Joomla, Wordpress</string>
+    <string name="about">About Us</string>
+    <string name="web">Visit Web Site</string>
+    <string name="address">House #11/A, Road #01, Dhanmondi R/A, Dhaka-1205</string>
+    <string name="phn">+8801787697582, +8801613746244</string>
+    <string name="email">russellaroyal2@gmail.com</string>
 </resources>
